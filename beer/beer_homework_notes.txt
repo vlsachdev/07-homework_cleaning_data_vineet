@@ -1,0 +1,26 @@
+IBU--International Bitterness Units
+
+ABV--Alcohol by volume
+
+IPA -- India Pale Ale
+
+Grand Rapids, MI    66
+Chicago, IL         55
+Portland, OR        52
+Indianapolis, IN    43
+San Diego, CA       42
+Boulder, CO         41
+Denver, CO          40
+Brooklyn, NY        38
+Seattle, WA         35
+Longmont, CO        33
+
+1.To find a particular quantile in a column do the following:-
+
+df.column_name.quantile(q =0.25)
+
+
+#plotting 2 histograms toogether:-
+
+# ax = df[df.Style.isin(['Witbier', 'Hefeweizen', 'American Pale Wheat Ale'])].IBUs.hist(alpha = 0.5)
+# df[df.Style.str.contains("IPA", na=False)].IBUs.hist(ax=ax,alpha = 0.5)
